@@ -1,0 +1,1 @@
+com2tcp.exe --ignore-dsr --baud 4800 \\.\COM7 10.8.0.1 2000
