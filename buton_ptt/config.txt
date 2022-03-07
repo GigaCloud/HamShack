@@ -1,0 +1,4 @@
+example.com  - adresa server PTT
+22           - port SSH server PTT 
+user         - user server PTT
+pass	     - parola user
