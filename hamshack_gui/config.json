@@ -1,0 +1,30 @@
+{
+  "serialControlStatie": {
+    "comPereche": "COM3",
+	"ipIGEL": "10.8.0.1",
+	"baud":"4800",
+	"port":"2000"
+  },
+  
+  "serialPTT_WSJT": {
+    "comWSJT": "COM5",
+    "comPTT": "COM6"
+  },
+
+  "PTT":{
+    "mute_cmd": "sudo -u pulse pactl set-source-mute @DEFAULT_SOURCE@ true",
+    "unmute_cmd": "sudo -u pulse pactl set-source-mute @DEFAULT_SOURCE@ false"
+  },
+  
+  "ssh": {
+    "server": "example.com",
+    "port" : "22",
+    "user" : "user",
+    "pass" : "pass"
+  },
+  
+  "audio": { 
+	"recAudio":"C:\\gstreamer\\1.0\\msvc_x86_64\\bin\\gst-launch-1.0 -v udpsrc port=5000 ! rawaudioparse use-sink-caps=false format=pcm pcm-format=s16le sample-rate=48000 num-channels=1 ! queue ! audioconvert ! audioresample ! autoaudiosink",
+	"traAudio":"C:\\gstreamer\\1.0\\msvc_x86_64\\bin\\gst-launch-1.0 wasapisrc ! audioconvert ! audio/x-raw, rate=48000, channels = 1, format=S16LE ! udpsink host=10.8.0.1 port=5000"
+  }
+}

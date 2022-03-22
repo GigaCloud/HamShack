@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="tk.Toplevel" id="toplevel2">
+    <property name="height">1000</property>
+    <property name="width">1000</property>
+    <containerlayout manager="grid">
+      <property type="col" id="0" name="weight">1</property>
+    </containerlayout>
+    <child>
+      <object class="tk.LabelFrame" id="butoanePTTFrame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">PTT
+</property>
+        <property name="width">1000</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="tk.Button" id="butonPTT">
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">PTT
+</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="butonWSJT">
+            <property name="text" translatable="yes">Mod WSJT
+</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="serialFrame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Serial</property>
+        <property name="width">1000</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">1</property>
+        </layout>
+
+        <child>
+          <object class="tk.Button" id="applySerial">
+            <property name="anchor">s</property>
+            <property name="text" translatable="yes">Restart
+</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="audioFrame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Audio
+</property>
+        <property name="width">1000</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">2</property>
+        </layout>
+        <child>
+          <object class="tk.Button" id="butonPrimesteAudio">
+            <property name="relief">raised</property>
+            <property name="text" translatable="yes">Primeste Audio
+</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="butonTrimiteAudio">
+            <property name="text" translatable="yes">Transmite Audio
+</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
